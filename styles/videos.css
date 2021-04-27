@@ -1,0 +1,321 @@
+/** universal selector **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/** clear fix **/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+html {
+	background-image: url("../images/backgroundimg.jpeg");
+}
+body {
+	position: relative;
+	background: black;
+	font-family: 'Antonio', sans-serif;
+	font-size: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	box-shadow: -5px -5px 15px 5px white;
+	border-radius: 10px;
+}
+header img {
+	padding: 1em;
+	float: left;
+	max-width: 300px;
+	width: 100%;
+}
+header h2 {
+	font-size: 600%;
+	float: center;
+	font-variant: small-caps;
+	text-shadow: 2px 2px white;
+	color: #29cad6;
+	padding-right: 3px;
+	padding-top: 40px;
+}
+header h2 a {
+	text-decoration: none !important;
+	color: #29cad6;
+}
+header h3 {
+	font-size: 200%;
+	padding: .25em 0 .25em 0;
+}
+section {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+}
+h4 {
+    font-size: 300%;
+    padding-top: .5em;
+    padding-bottom: 1em;
+    font-variant: small-caps;
+	text-shadow: 2px 2px white;
+	color: #29cad6;
+}
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: 0 auto;
+    border: 6px solid #29cad6;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.caption p {
+    margin: 2em;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 100%;
+    padding-bottom: 2em;
+	border-bottom: solid 5px white;
+	color: white;
+}
+.caption1 p {
+    margin: 2em;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 100%;
+	padding-bottom: 2em;
+	color: white;
+}
+
+/* the styles for the navigation menu */
+#nav_menu {
+	clear: both;
+}
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+	width: 33.32%;
+}
+#nav_menu ul li a {
+	display: block;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	font-variant: small-caps;
+	font-size: 120%;
+	background-color: #29cad6;
+	color: white;
+	font-weight: bold;
+}
+#nav_menu a:hover {
+	background-color: #29cad6;
+	color: black;
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+}
+#nav_menu ul ul li a {
+	text-align: left;
+	padding: .5em;
+
+}
+#nav_menu ul ul li {
+	float: none;
+
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+/* bookmarks bar */
+.bookmarks {
+	float: left;
+	width: 12%;
+	margin: 10em 2em 0 3em;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 100px;
+}
+.bookmarks ul {
+	list-style: none;
+	width: 95%;
+	margin: 2em 0 0;
+}
+.bookmarks ul li {
+	margin: 0 1em 3px 0;
+	transition: all .5s;
+}
+.bookmarks ul li a {
+	padding: .5em .5em;
+	display: block;
+	background-color: #404040;
+	border: 1px solid #808080;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-left: 0;
+	transition: all .5s;
+}
+.bookmarks ul li a:hover {
+	background-color: black;
+	color: #29cad6;
+	border: 1px solid #29cad6;
+}
+.bookmarks ul li:hover {
+	margin: 0 0 3px 1em;
+}
+
+/* the styles for the footer */
+footer {
+	background-color: black;
+	clear: both;
+	border-top: 3px solid #000000;
+	width: 100%;
+	border-radius: 0 0 10px 10px;
+	border-top: 3px solid #29cad6;
+
+}
+footer p {
+	text-align: center;
+	color: white;
+	font-size: 90%;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding: 2em 0;
+}
+
+/* scroll to top button */
+#myBtn {
+	display: none; /* Hidden by default */
+	width: 88%;
+	z-index: 99; /* Make sure it does not overlap */
+	border: 1px solid #808080;
+	outline: none; /* Remove outline */
+	background-color: #404040; /* Set a background color */
+	color: white; /* Text color */
+	font-weight: bold;
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: .5em .5em;
+	margin: 0 1em 3px 0;
+	text-align: left;
+	transition: all .5s;
+	font-family: 'Nova Square', cursive;
+	font-size: 100%;
+	border-radius: 5px;
+}
+#myBtn:hover {
+	background-color: black;
+	color: #29cad6;
+	margin: 0 0 3px 1em;
+	border: 1px solid #29cad6;
+}
+#cornerBtn {
+	display: none; /* Hidden by default */
+	position: fixed;
+	left: 5px;
+	bottom: 150px;
+	z-index: 99; /* Make sure it does not overlap */
+	border: 1px solid black;
+	outline: none; /* Remove outline */
+	font-weight: bold;
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: .5em .5em;
+	margin: 0 1em 3px 0;
+	font-family: 'Antonio', sans-serif;
+	font-size: 100%;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,.6);
+	color: white;
+	transition: all .5s;
+}
+#cornerBtn:hover {
+	background-color: rgba(0,0,0,1);
+	color: #29cad6;
+	border: 1px solid #29cad6;
+}
+
+
+/* hide the slicknav in large-screen view */
+.slicknav_menu {
+	display: none;
+}
+
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+	body, aside {
+		box-shadow: none;
+		border-radius: 0;
+	}
+	footer {
+		border-radius: 0;
+	}
+}
+
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+	
+	header img { 
+		float: none; 
+		padding: 0;
+		margin: 0 auto;
+	}
+	header { text-align: center; }
+	header h2, header h3 {
+		padding: 0 0 .25em;
+		font-size: 175%;
+	}
+	h1 {
+		font-size: 200%;
+	}
+	section, aside {
+		float: none;
+		width: 99%;
+		margin: 0 auto;
+		padding: .5em;
+	}
+
+	/* hide the navigation menu */
+	#nav_menu {
+		display: none;
+	}
+	
+	/* and replace it with the slicknav menu */
+	.slicknav_menu {
+		display: block;
+		text-align: left !important;
+		background-color: #29cad6 !important;
+	}
+	.bookmarks {
+		display: none;
+	}
+	
+}
+
+
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+	body { font-size: 90%; }
+}
